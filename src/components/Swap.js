@@ -1,16 +1,35 @@
 import React from "react";
 import styles from "./App.module.css";
 import { Form, Button, Dropdown } from 'react-bootstrap'
+import { connect } from "react-redux";
+import { swapSelector, swapLoadedSelector, accountSelector, amountSelector } from "../store/selectors";
+import { swapFunc } from "../store/interactions";
+import { amountChanged } from "../store/actions";
 
 const Swap = (props) => {
+  const { dispatch, swap, account, amount } = props
   return (
     <>
+    {props.swapLoaded ? 
       <div className={`${styles.homeContainer} ${styles.homeContainerSmaller}`}>
         <div className={`${styles.innerHomeContainer}`}>
-        <Form>
+        <Form onSubmit={(e) => {
+          e.preventDefault()
+          swapFunc(
+            dispatch,
+            swap,
+            account,
+            amount,
+            // receiver,
+            // feeAmount, 
+            // bank
+          )
+        }}>
     <Form.Label>Swap</Form.Label>
   <Form.Group className={`mb-3 ${styles.flexFormGroup}`} controlId="formBasicEmail">
-    <Form.Control type="email" placeholder="0.0" />
+    <Form.Control type="email" placeholder="0.0" onChange={(e) => {
+      dispatch(amountChanged(parseInt(e.target.value)))
+    }} />
     <Dropdown>
       <Dropdown.Toggle variant="success" id='dropdown-button-drop-end' key='end' drop='end'>
         Select a Token
@@ -40,8 +59,18 @@ const Swap = (props) => {
 </Form>
         </div>
       </div>
+    : <div>contracts not loaded</div>}
     </>
   );
 };
 
-export default Swap;
+function mapStateToProps(state) {
+  return {
+    swap: swapSelector(state),
+    swapLoaded: swapLoadedSelector(state),
+    account: accountSelector(state),
+    amount: amountSelector(state)
+  };
+}
+
+export default connect(mapStateToProps)(Swap);

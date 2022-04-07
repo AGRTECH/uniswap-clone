@@ -11,3 +11,23 @@ export function web3AccountLoaded(account) {
     account,
   };
 }
+
+export function swapLoaded(contract) {
+  return {
+    type: "SWAP_LOADED",
+    contract,
+  };
+}
+
+export function swapCreated() {
+  return {
+    type: 'SWAP_CREATED'
+  }
+}
+
+export function amountChanged(amount) {
+  return {
+    type: "AMOUNT_CHANGED",
+    amount,
+  };
+}

@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Swap from './Swap';
 import Pool from './Pool';
 import styles from "./App.module.css";
-import { loadAccount, loadWeb3 } from '../store/interactions';
+import { loadAccount, loadWeb3, loadSwap } from '../store/interactions';
 import { connect } from "react-redux";
 
 const App = (props) => {
@@ -15,17 +15,17 @@ const App = (props) => {
     await web3.eth.net.getNetworkType();
     const account = await loadAccount(web3, dispatch);
     const networkId = await web3.eth.net.getId();
-    // const everpay = await loadEverpay(web3, networkId, dispatch);
+    const swap = await loadSwap(web3, networkId, dispatch);
     // const tether = await loadTether(web3, networkId, dispatch);
-    // if (!everpay && !tether) {
-      // window.alert(
-        // "Token smart contract not detcted on the current network. Please select another network with Metamask"
-      // );
-    // } else {
+    if (!swap) {
+      window.alert(
+        "Token smart contract not detcted on the current network. Please select another network with Metamask"
+      );
+    } else {
       // await loadAllData(everpay, dispatch);
       // await subscribeToEvents(everpay, dispatch);
       // await showBalances(dispatch, account, tether, everpay);
-    // }
+    }
   };
 
   if (!mounted) {

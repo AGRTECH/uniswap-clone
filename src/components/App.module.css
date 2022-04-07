@@ -14,6 +14,11 @@ body {
   margin-left: 115px;
 }
 
+.poolButton {
+  width: 50%;
+  margin-left: 90px;
+}
+
 .homeContainer {
   height: 300px;
   width: 40%;
@@ -50,8 +55,56 @@ body {
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+.homeContainerModal {
+  height: 300px;
+  /* width: 40%; */
+  margin: 75px 0 0 0px;
+  background-color: rgba(255, 255, 255, 0.679);
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(30, 139, 195, 0.3),
+    rgba(30, 139, 195, 0.3) 50%,
+    white 50%,
+    white
+  );
+  background-size: cover;
+  background-repeat: no-repeat; */
+  border-radius: 5%;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, */
+    /* rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+}
+.aboutContainer {
+  height: 600px;
+  margin: 0 150px 0 150px;
+  /* background-color: rgba(30, 139, 195, 0.3); */
+  background-image: linear-gradient(
+    to top,
+    white,
+    white 80%,
+    rgba(30, 139, 195, 0.3) 20%,
+    rgba(30, 139, 195, 0.3)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 .innerHomeContainer {
   padding: 50px 50px 50px 50px;
+}
+
+.liquidityList {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  border-radius: 5%;
+  margin-top: 15px;
+}
+
+.poolContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .flexFormGroup {

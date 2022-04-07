@@ -13,8 +13,20 @@ function web3(state = {}, action) {
   }
 }
 
+function swap(state = {}, action) {
+  switch (action.type) {
+    case "SWAP_LOADED":
+      return { ...state, loaded: true, contract: action.contract };
+    case "AMOUNT_CHANGED":
+      return {...state, amount: action.amount}  
+    default:
+      return state;
+  }
+}
+
 const rootReducer = combineReducers({
-  web3
+  web3,
+  swap
 });
 
 export default rootReducer;
