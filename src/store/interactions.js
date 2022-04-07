@@ -3,9 +3,13 @@ import {
   web3Loaded,
   web3AccountLoaded,
   swapLoaded,
-  swapCreated
+  swapCreated,
+  masterChefLoaded,
+  sushiMakerLoaded
 } from "./actions";
 import Swap from "../abis/Swap.json";
+import MasterChef from '../abis/MasterChef.json'
+import SushiMaker from '../abis/SushiMaker.json'
 
 export const loadWeb3 = (dispatch) => {
   const web3 = new Web3(window.ethereum);
@@ -36,21 +40,49 @@ export const loadSwap = async (web3, networkId, dispatch) => {
   }
 };
 
-export const swapFunc = (
+export const loadMasterChef = async (web3, networkId, dispatch) => {
+  try {
+    const masterChef = new web3.eth.Contract(
+      MasterChef.abi,
+      MasterChef.networks[networkId].address
+    );
+    dispatch(masterChefLoaded(masterChef));
+    return masterChef;
+  } catch (error) {
+    console.log(
+      "Contract not deployed to the current network, Please select another network with Metamask"
+    );
+    return null;
+  }
+};
+
+export const loadSushiMaker = async (web3, networkId, dispatch) => {
+  try {
+    const sushiMaker = new web3.eth.Contract(
+      SushiMaker.abi,
+      SushiMaker.networks[networkId].address
+    );
+    dispatch(sushiMakerLoaded(sushiMaker));
+    return sushiMaker;
+  } catch (error) {
+    console.log(
+      "Contract not deployed to the current network, Please select another network with Metamask"
+    );
+    return null;
+  }
+};
+
+export const convertFunc = (
   dispatch,
-  swap,
+  sushimaker,
   account,
-  amount,
-  receiver,
-  feeAmount, 
-  bank
+  token1,
+  token2
 ) => {
-    swap.methods
-      .swap(
-        amount,
-        receiver,
-        feeAmount,
-        bank
+    sushimaker.methods
+      .convert(
+        token1,
+        token2
       )
       .send({ from: account })
       .on("transactionHash", (hash) => {
@@ -61,3 +93,29 @@ export const swapFunc = (
         window.alert(`There was an error!`);
       });
 };
+
+// export const swapFunc = (
+//   dispatch,
+//   swap,
+//   account,
+//   amount,
+//   receiver,
+//   feeAmount, 
+//   bank
+// ) => {
+//     swap.methods
+//       .swap(
+//         amount,
+//         receiver,
+//         feeAmount,
+//         bank
+//       )
+//       .send({ from: account })
+//       .on("transactionHash", (hash) => {
+//         dispatch(swapCreated());
+//       })
+//       .on("error", (error) => {
+//         console.error(error);
+//         window.alert(`There was an error!`);
+//       });
+// };

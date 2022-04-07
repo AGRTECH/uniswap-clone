@@ -19,14 +19,28 @@ function swap(state = {}, action) {
       return { ...state, loaded: true, contract: action.contract };
     case "AMOUNT_CHANGED":
       return {...state, amount: action.amount}  
+    case "SUSHIMAKER_LOADED":
+      return {...state, sushiMakerLoaded: true, sushiMakerContract: action.contract}  
     default:
       return state;
   }
 }
 
+function pool(state = {}, action) {
+  switch (action.type) {
+    case "MASTERCHEF_LOADED":
+      return { ...state, loaded: true, contract: action.contract };
+    default:
+      return state;
+  }
+}
+
+
+
 const rootReducer = combineReducers({
   web3,
-  swap
+  swap,
+  pool
 });
 
 export default rootReducer;

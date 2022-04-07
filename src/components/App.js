@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Swap from './Swap';
 import Pool from './Pool';
 import styles from "./App.module.css";
-import { loadAccount, loadWeb3, loadSwap } from '../store/interactions';
+import { loadAccount, loadWeb3, loadSwap, loadMasterChef, loadSushiMaker } from '../store/interactions';
 import { connect } from "react-redux";
 
 const App = (props) => {
@@ -16,8 +16,10 @@ const App = (props) => {
     const account = await loadAccount(web3, dispatch);
     const networkId = await web3.eth.net.getId();
     const swap = await loadSwap(web3, networkId, dispatch);
+    const masterChef = await loadMasterChef(web3, networkId, dispatch);
+    const sushiMaker = await loadSushiMaker(web3, networkId, dispatch);
     // const tether = await loadTether(web3, networkId, dispatch);
-    if (!swap) {
+    if (!swap && !masterChef && !sushiMaker) {
       window.alert(
         "Token smart contract not detcted on the current network. Please select another network with Metamask"
       );

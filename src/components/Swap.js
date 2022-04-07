@@ -2,27 +2,24 @@ import React from "react";
 import styles from "./App.module.css";
 import { Form, Button, Dropdown } from 'react-bootstrap'
 import { connect } from "react-redux";
-import { swapSelector, swapLoadedSelector, accountSelector, amountSelector } from "../store/selectors";
-import { swapFunc } from "../store/interactions";
+import { swapSelector, swapLoadedSelector, accountSelector, amountSelector, sushiMakerSelector, sushiMakerLoadedSelector } from "../store/selectors";
+import { convertFunc } from "../store/interactions";
 import { amountChanged } from "../store/actions";
 
 const Swap = (props) => {
-  const { dispatch, swap, account, amount } = props
+  const { dispatch, swap, swapLoaded, account, amount, sushiMaker, sushiMakerLoaded } = props
   return (
     <>
-    {props.swapLoaded ? 
+    {swapLoaded && sushiMakerLoaded ? 
       <div className={`${styles.homeContainer} ${styles.homeContainerSmaller}`}>
         <div className={`${styles.innerHomeContainer}`}>
         <Form onSubmit={(e) => {
           e.preventDefault()
-          swapFunc(
+          convertFunc(
             dispatch,
-            swap,
+            sushiMaker,
             account,
             amount,
-            // receiver,
-            // feeAmount, 
-            // bank
           )
         }}>
     <Form.Label>Swap</Form.Label>
@@ -69,7 +66,9 @@ function mapStateToProps(state) {
     swap: swapSelector(state),
     swapLoaded: swapLoadedSelector(state),
     account: accountSelector(state),
-    amount: amountSelector(state)
+    amount: amountSelector(state),
+    sushiMaker: sushiMakerSelector(state),
+    sushiMakerLoaded: sushiMakerLoadedSelector(state)
   };
 }
 

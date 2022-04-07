@@ -19,6 +19,20 @@ export function swapLoaded(contract) {
   };
 }
 
+export function masterChefLoaded(contract) {
+  return {
+    type: "MASTERCHEF_LOADED",
+    contract,
+  };
+}
+
+export function sushiMakerLoaded(contract) {
+  return {
+    type: "SUSHIMAKER_LOADED",
+    contract,
+  };
+}
+
 export function swapCreated() {
   return {
     type: 'SWAP_CREATED'

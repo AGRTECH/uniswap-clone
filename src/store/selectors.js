@@ -16,5 +16,11 @@ export const swapLoadedSelector = createSelector(swapLoaded, (tl) => tl);
 const swap = (state) => get(state, "swap.contract");
 export const swapSelector = createSelector(swap, (t) => t);
 
+const sushiMakerLoaded = (state) => get(state, "swap.sushiMakerLoaded", false);
+export const sushiMakerLoadedSelector = createSelector(sushiMakerLoaded, (tl) => tl);
+
+const sushiMaker = (state) => get(state, "swap.sushiMakerContract");
+export const sushiMakerSelector = createSelector(sushiMaker, (t) => t);
+
 const amount = (state) => get(state, "swap.amount");
 export const amountSelector = createSelector(amount, (t) => t);

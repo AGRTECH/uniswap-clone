@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import { Form, Button, Dropdown, Modal } from 'react-bootstrap'
 import { connect } from "react-redux";
 import { swapSelector, swapLoadedSelector, accountSelector, amountSelector } from "../store/selectors";
-import { swapFunc } from "../store/interactions";
+import {  } from "../store/interactions";
 import { amountChanged } from "../store/actions";
 
 const Pool = (props) => {
@@ -23,15 +23,15 @@ const Pool = (props) => {
         <div className={`${styles.innerHomeContainer}`}>
         <Form onSubmit={(e) => {
           e.preventDefault()
-          swapFunc(
-            dispatch,
-            swap,
-            account,
-            amount,
+          // swapFunc(
+          //   dispatch,
+          //   swap,
+          //   account,
+          //   amount,
             // receiver,
             // feeAmount, 
             // bank
-          )
+          // )
         }}>
     <Form.Label>Add liquidity</Form.Label>
   <Form.Group className={`mb-3 ${styles.flexFormGroup}`} controlId="formBasicEmail">
