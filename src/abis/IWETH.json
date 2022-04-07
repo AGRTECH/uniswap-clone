@@ -46,16 +46,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IWETH.sol\":\"IWETH\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IWETH.sol\":{\"keccak256\":\"0x2b2dfdece146425af2c3468ccd72c52cbf709eb38421a300e21ef7f57b033fce\",\"urls\":[\"bzz-raw://d007835facffb20b731b70fc3ae59111485e04c012e80c0ae4e327a51b7819f9\",\"dweb:/ipfs/QmcMxqwJyNLrk3mGUEqGgFNJdhdRARiMCcHhgU77YXnrqQ\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IWETH.sol\":\"IWETH\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IWETH.sol\":{\"keccak256\":\"0x2b2dfdece146425af2c3468ccd72c52cbf709eb38421a300e21ef7f57b033fce\",\"urls\":[\"bzz-raw://d007835facffb20b731b70fc3ae59111485e04c012e80c0ae4e327a51b7819f9\",\"dweb:/ipfs/QmcMxqwJyNLrk3mGUEqGgFNJdhdRARiMCcHhgU77YXnrqQ\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity >=0.5.0;\n\ninterface IWETH {\n    function deposit() external payable;\n    function transfer(address to, uint value) external returns (bool);\n    function withdraw(uint) external;\n}",
-  "sourcePath": "C:\\Users\\ross4\\Desktop\\blockchain-truffle-environment - Copy\\transparent-voting\\src\\contracts\\uniswapv2\\interfaces\\IWETH.sol",
+  "sourcePath": "C:\\Users\\ross4\\Desktop\\uniswap-clone\\uniswap-clone\\src\\contracts\\uniswapv2\\interfaces\\IWETH.sol",
   "ast": {
-    "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IWETH.sol",
+    "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IWETH.sol",
     "exportedSymbols": {
       "IWETH": [
         9304
@@ -301,7 +301,7 @@
     "src": "0:195:23"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IWETH.sol",
+    "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IWETH.sol",
     "exportedSymbols": {
       "IWETH": [
         9304
@@ -552,7 +552,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.3",
-  "updatedAt": "2022-04-07T01:04:35.073Z",
+  "updatedAt": "2022-04-07T02:14:54.625Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

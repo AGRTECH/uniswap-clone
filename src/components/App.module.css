@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(224, 120, 8, 0.469);
+  z-index: -100;
+}
+
+.homeContainer {
+  height: 300px;
+  width: 40%;
+  margin: 75px 0 0 450px;
+  background-color: rgba(255, 255, 255, 0.679);
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(30, 139, 195, 0.3),
+    rgba(30, 139, 195, 0.3) 50%,
+    white 50%,
+    white
+  );
+  background-size: cover;
+  background-repeat: no-repeat; */
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.aboutContainer {
+  height: 600px;
+  margin: 0 150px 0 150px;
+  /* background-color: rgba(30, 139, 195, 0.3); */
+  background-image: linear-gradient(
+    to top,
+    white,
+    white 80%,
+    rgba(30, 139, 195, 0.3) 20%,
+    rgba(30, 139, 195, 0.3)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.innerHomeContainer {
+  padding: 50px 50px 50px 50px;
+}
+
+.innerAboutContainer {
+  padding: 25px 50px 50px 50px;
+}
+
+.nftImage {
+  width: 300px;
+  height: 300px;
+}
+
+.nameList {
+  list-style: none;
+}
+
+.homeTopFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeName {
+  font-size: 65px;
+}
+
+.aboutName {
+  font-size: 45px;
+}
+
+.homeOccupation {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.homeBotFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactBot {
+  padding: 0 200px 0 200px;
+}
+
+.homeBotLeft {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.homeBotRight {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.homeBotRightLeftList {
+  list-style: none;
+  font-weight: bold;
+}
+
+.homeBotRightRightList {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.buttonLiveDemo {
+  margin-right: 7px;
+}
+
+@media (max-width: 1000px) {
+  .homeContainerSmaller {
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media (max-width: 415px) {
+  .homeTopFlexIphone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeNameIphone {
+    font-size: 30px;
+  }
+
+  .homeNameOccupationIphone {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .nftImageIphone {
+    width: 180px;
+    height: 180px;
+  }
+
+  .homeContainer {
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 62%,
+      rgba(30, 139, 195, 0.3) 38%,
+      rgba(30, 139, 195, 0.3)
+    );
+    height: 850px;
+  }
+
+  .aboutContainer {
+    height: 1000px;
+  }
+
+  .contactContainer {
+    height: 500px;
+  }
+
+  .homeBotFlex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeBotLeft {
+    width: 100%;
+  }
+
+  .homeBotRight {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+
+  .homeBotRightLeftList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .homeBotRightRightList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .homeBotRightLeftList li {
+    margin-right: 20px;
+  }
+
+  .homeBotRightRightList li {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .aboutName {
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .aboutTop {
+    display: block;
+  }
+
+  .homeDescription {
+    text-align: center;
+  }
+
+  .nameList {
+    padding-left: 0px;
+  }
+
+  .contactBot {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

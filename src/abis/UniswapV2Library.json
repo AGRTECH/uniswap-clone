@@ -1,16 +1,16 @@
 {
   "contractName": "UniswapV2Library",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/UniswapV2Library.sol\":\"UniswapV2Library\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol\":{\"keccak256\":\"0x95203b071357552345aa2c4b2afd770ce49d671f41fc370e06112a37a4f6709f\",\"urls\":[\"bzz-raw://790eb900446171b7e51321e7ca8c14e96fbd89b3adc47c79e635f026ab59882e\",\"dweb:/ipfs/QmeSWaEyNPeEbDzkiwd8gNiwRfygFTeackeN53H8GwTrEs\"]},\"/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/SafeMath.sol\":{\"keccak256\":\"0xe3b1e8248b16becd24db75913332ff35b919c73b5ffc5e3de72630119704acd2\",\"urls\":[\"bzz-raw://7e4ef3679563e2b91db493956330ec360b5d30334b9f9e1b38354857525a91c5\",\"dweb:/ipfs/QmbirqVnyDkbU4Eydd6B7ACPFZeqNorUbyjhVo8F4ieG1v\"]},\"/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/UniswapV2Library.sol\":{\"keccak256\":\"0xc6aa6e4777d9824c9d892dffa86f5d63e587c5e11413e8aeca008ad89956ff00\",\"urls\":[\"bzz-raw://eb787277514da3a03c1576c5834605daf4b68c51dcb2ef59cdff81ca4cb6d805\",\"dweb:/ipfs/QmazVuubzqFzenJgbxxf2z5moDrpbUJf4QUwuLk8HzEPAc\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220750af23e289a9e4b425f772e481a50029bfbe68081293335443250341b2c92e664736f6c634300060c0033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220750af23e289a9e4b425f772e481a50029bfbe68081293335443250341b2c92e664736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/UniswapV2Library.sol\":\"UniswapV2Library\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol\":{\"keccak256\":\"0x95203b071357552345aa2c4b2afd770ce49d671f41fc370e06112a37a4f6709f\",\"urls\":[\"bzz-raw://790eb900446171b7e51321e7ca8c14e96fbd89b3adc47c79e635f026ab59882e\",\"dweb:/ipfs/QmeSWaEyNPeEbDzkiwd8gNiwRfygFTeackeN53H8GwTrEs\"]},\"/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/SafeMath.sol\":{\"keccak256\":\"0xe3b1e8248b16becd24db75913332ff35b919c73b5ffc5e3de72630119704acd2\",\"urls\":[\"bzz-raw://7e4ef3679563e2b91db493956330ec360b5d30334b9f9e1b38354857525a91c5\",\"dweb:/ipfs/QmbirqVnyDkbU4Eydd6B7ACPFZeqNorUbyjhVo8F4ieG1v\"]},\"/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/UniswapV2Library.sol\":{\"keccak256\":\"0xc6aa6e4777d9824c9d892dffa86f5d63e587c5e11413e8aeca008ad89956ff00\",\"urls\":[\"bzz-raw://eb787277514da3a03c1576c5834605daf4b68c51dcb2ef59cdff81ca4cb6d805\",\"dweb:/ipfs/QmazVuubzqFzenJgbxxf2z5moDrpbUJf4QUwuLk8HzEPAc\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212205d949a020cceaa2edc6222a49a01353203d9d6c39b5bbb7513208e92fa6efa7864736f6c634300060c0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212205d949a020cceaa2edc6222a49a01353203d9d6c39b5bbb7513208e92fa6efa7864736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "96:4340:28:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "96:4340:28:-:0;;;;;;;;",
   "source": "pragma solidity >=0.5.0;\n\nimport '../interfaces/IUniswapV2Pair.sol';\n\nimport \"./SafeMath.sol\";\n\nlibrary UniswapV2Library {\n    using SafeMathUniswap for uint;\n\n    // returns sorted token addresses, used to handle return values from pairs sorted in this order\n    function sortTokens(address tokenA, address tokenB) internal pure returns (address token0, address token1) {\n        require(tokenA != tokenB, 'UniswapV2Library: IDENTICAL_ADDRESSES');\n        (token0, token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);\n        require(token0 != address(0), 'UniswapV2Library: ZERO_ADDRESS');\n    }\n\n    // calculates the CREATE2 address for a pair without making any external calls\n    function pairFor(address factory, address tokenA, address tokenB) internal pure returns (address pair) {\n        (address token0, address token1) = sortTokens(tokenA, tokenB);\n        pair = address(uint(keccak256(abi.encodePacked(\n                hex'ff',\n                factory,\n                keccak256(abi.encodePacked(token0, token1)),\n                hex'e18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303' // init code hash\n            ))));\n    }\n\n    // fetches and sorts the reserves for a pair\n    function getReserves(address factory, address tokenA, address tokenB) internal view returns (uint reserveA, uint reserveB) {\n        (address token0,) = sortTokens(tokenA, tokenB);\n        (uint reserve0, uint reserve1,) = IUniswapV2Pair(pairFor(factory, tokenA, tokenB)).getReserves();\n        (reserveA, reserveB) = tokenA == token0 ? (reserve0, reserve1) : (reserve1, reserve0);\n    }\n\n    // given some amount of an asset and pair reserves, returns an equivalent amount of the other asset\n    function quote(uint amountA, uint reserveA, uint reserveB) internal pure returns (uint amountB) {\n        require(amountA > 0, 'UniswapV2Library: INSUFFICIENT_AMOUNT');\n        require(reserveA > 0 && reserveB > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');\n        amountB = amountA.mul(reserveB) / reserveA;\n    }\n\n    // given an input amount of an asset and pair reserves, returns the maximum output amount of the other asset\n    function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) internal pure returns (uint amountOut) {\n        require(amountIn > 0, 'UniswapV2Library: INSUFFICIENT_INPUT_AMOUNT');\n        require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');\n        uint amountInWithFee = amountIn.mul(997);\n        uint numerator = amountInWithFee.mul(reserveOut);\n        uint denominator = reserveIn.mul(1000).add(amountInWithFee);\n        amountOut = numerator / denominator;\n    }\n\n    // given an output amount of an asset and pair reserves, returns a required input amount of the other asset\n    function getAmountIn(uint amountOut, uint reserveIn, uint reserveOut) internal pure returns (uint amountIn) {\n        require(amountOut > 0, 'UniswapV2Library: INSUFFICIENT_OUTPUT_AMOUNT');\n        require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');\n        uint numerator = reserveIn.mul(amountOut).mul(1000);\n        uint denominator = reserveOut.sub(amountOut).mul(997);\n        amountIn = (numerator / denominator).add(1);\n    }\n\n    // performs chained getAmountOut calculations on any number of pairs\n    function getAmountsOut(address factory, uint amountIn, address[] memory path) internal view returns (uint[] memory amounts) {\n        require(path.length >= 2, 'UniswapV2Library: INVALID_PATH');\n        amounts = new uint[](path.length);\n        amounts[0] = amountIn;\n        for (uint i; i < path.length - 1; i++) {\n            (uint reserveIn, uint reserveOut) = getReserves(factory, path[i], path[i + 1]);\n            amounts[i + 1] = getAmountOut(amounts[i], reserveIn, reserveOut);\n        }\n    }\n\n    // performs chained getAmountIn calculations on any number of pairs\n    function getAmountsIn(address factory, uint amountOut, address[] memory path) internal view returns (uint[] memory amounts) {\n        require(path.length >= 2, 'UniswapV2Library: INVALID_PATH');\n        amounts = new uint[](path.length);\n        amounts[amounts.length - 1] = amountOut;\n        for (uint i = path.length - 1; i > 0; i--) {\n            (uint reserveIn, uint reserveOut) = getReserves(factory, path[i - 1], path[i]);\n            amounts[i - 1] = getAmountIn(amounts[i], reserveIn, reserveOut);\n        }\n    }\n}\n",
-  "sourcePath": "C:\\Users\\ross4\\Desktop\\blockchain-truffle-environment - Copy\\transparent-voting\\src\\contracts\\uniswapv2\\libraries\\UniswapV2Library.sol",
+  "sourcePath": "C:\\Users\\ross4\\Desktop\\uniswap-clone\\uniswap-clone\\src\\contracts\\uniswapv2\\libraries\\UniswapV2Library.sol",
   "ast": {
-    "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/UniswapV2Library.sol",
+    "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/UniswapV2Library.sol",
     "exportedSymbols": {
       "UniswapV2Library": [
         10131
@@ -32,7 +32,7 @@
         "src": "0:24:28"
       },
       {
-        "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol",
+        "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol",
         "file": "../interfaces/IUniswapV2Pair.sol",
         "id": 9662,
         "nodeType": "ImportDirective",
@@ -43,7 +43,7 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/SafeMath.sol",
+        "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/SafeMath.sol",
         "file": "./SafeMath.sol",
         "id": 9663,
         "nodeType": "ImportDirective",
@@ -6893,7 +6893,7 @@
     "src": "0:4437:28"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/UniswapV2Library.sol",
+    "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/UniswapV2Library.sol",
     "exportedSymbols": {
       "UniswapV2Library": [
         10131
@@ -6915,7 +6915,7 @@
         "src": "0:24:28"
       },
       {
-        "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol",
+        "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol",
         "file": "../interfaces/IUniswapV2Pair.sol",
         "id": 9662,
         "nodeType": "ImportDirective",
@@ -6926,7 +6926,7 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/C/Users/ross4/Desktop/blockchain-truffle-environment - Copy/transparent-voting/src/contracts/uniswapv2/libraries/SafeMath.sol",
+        "absolutePath": "/C/Users/ross4/Desktop/uniswap-clone/uniswap-clone/src/contracts/uniswapv2/libraries/SafeMath.sol",
         "file": "./SafeMath.sol",
         "id": 9663,
         "nodeType": "ImportDirective",
@@ -13781,7 +13781,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.3",
-  "updatedAt": "2022-04-07T01:04:35.107Z",
+  "updatedAt": "2022-04-07T02:14:54.653Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
