@@ -1,51 +1,43 @@
 import React from "react";
 import styles from "./App.module.css";
+import { Form, Button, Dropdown } from 'react-bootstrap'
 
 const Swap = (props) => {
   return (
     <>
       <div className={`${styles.homeContainer} ${styles.homeContainerSmaller}`}>
         <div className={`${styles.innerHomeContainer}`}>
-          <div className={`${styles.homeTopFlex} ${styles.homeTopFlexIphone}`}>
-            <div></div>
-            <ul className={styles.nameList}>
-              <li className={`${styles.homeName} ${styles.homeNameIphone}`}>
-                Alex Ross
-              </li>
-              <li
-                className={`${styles.homeOccupation} ${styles.homeNameOccupationIphone}`}
-              >
-                dApp Developer
-              </li>
-            </ul>
-            <div></div>
-          </div>
-          <div className={styles.homeBotFlex}>
-            <div className={styles.homeBotLeft}>
-              <p className={styles.homeDescription}>About Me</p>
-              <p className={styles.homeDescription}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                soluta aliquid? Esse voluptatum laudantium quasi non? Tenetur
-                voluptates quidem perferendis, fugiat eaque, laudantium aut
-                illum esse atque eligendi enim ipsum?
-              </p>
-            </div>
-            <div className={styles.homeBotRight}>
-              <ul className={styles.homeBotRightLeftList}>
-                <li>Age</li>
-                <li>Residence</li>
-                <li>email</li>
-                <li>Phone</li>
-              </ul>
-              <ul className={styles.homeBotRightRightList}>
-                <li>22</li>
-                <li>Michigan, USA</li>
-                <li>xarossx@yahoo.com</li>
-                <li>(586) 651-6917</li>
-              </ul>
-            </div>
-            <div></div>
-          </div>
+        <Form>
+    <Form.Label>Swap</Form.Label>
+  <Form.Group className={`mb-3 ${styles.flexFormGroup}`} controlId="formBasicEmail">
+    <Form.Control type="email" placeholder="0.0" />
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id='dropdown-button-drop-end' key='end' drop='end'>
+        Select a Token
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Token1</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Form.Group>
+
+  <Form.Group className={`mb-3 ${styles.flexFormGroup}`} controlId="formBasicPassword">
+    <Form.Control type="password" placeholder="0.0" />
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Select a Token
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-3">Token2</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Form.Group>
+  <Button variant="success" className={styles.swapButton} type="submit">
+    Swap
+  </Button>
+</Form>
         </div>
       </div>
     </>

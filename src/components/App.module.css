@@ -5,8 +5,13 @@
 }
 
 body {
-  background-color: rgba(224, 120, 8, 0.469);
+  background-color: rgba(167, 232, 15, 0.325);
   z-index: -100;
+}
+
+.swapButton {
+  width: 50%;
+  margin-left: 115px;
 }
 
 .homeContainer {
@@ -47,6 +52,10 @@ body {
 
 .innerHomeContainer {
   padding: 50px 50px 50px 50px;
+}
+
+.flexFormGroup {
+  display: flex;
 }
 
 .innerAboutContainer {

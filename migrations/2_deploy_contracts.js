@@ -7,6 +7,7 @@ const MasterChef = artifacts.require("MasterChef.sol");
 const SushiBar = artifacts.require("SushiBar.sol");
 const SushiMaker = artifacts.require("SushiMaker.sol");
 const Migrator = artifacts.require("Migrator.sol");
+const Swap = artifacts.require("Swap.sol");
 
 module.exports = async function (deployer, network, address) {
   const admin = address[0];
@@ -65,4 +66,5 @@ module.exports = async function (deployer, network, address) {
     factory.address,
     1
   );
+  await deployer.deploy(Swap)
 };
